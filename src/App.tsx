@@ -662,11 +662,9 @@ export default function App() {
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-between items-center gap-6 pt-12 border-t border-white/5 text-xs text-white/20 uppercase tracking-widest font-bold">
-            <div>© 2024 PLAUD AI. Все права защищены.</div>
+            <div>© 2026 ИП Сентюрин Никита Алексеевич  ИНН: 501218277990</div>
             <div className="flex gap-8">
-              <a href="#" className="hover:text-white transition-colors">Twitter</a>
-              <a href="#" className="hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="hover:text-white transition-colors">LinkedIn</a>
+              <a href="#" className="hover:text-white transition-colors">Telegram</a>
             </div>
           </div>
         </div>
