@@ -344,9 +344,9 @@ export default function App() {
               </div>
             </div>
             <img 
-              src="https://avatars.mds.yandex.net/i?id=bae67f534ac46fbdefce98c6284e6e53_l-9459492-images-thumbs&n=13" 
-              alt="Устройство Plaud Note" 
-              className="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-700"
+              src="https://uk.plaud.ai/cdn/shop/files/plaud-note-black-silver-hero.webp" 
+              alt="Устройства Plaud Note" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
@@ -503,54 +503,86 @@ export default function App() {
       </section>
 
       {/* Product Gallery Section */}
-      <section className="py-32 px-6">
+      <section className="py-32 px-6 bg-[#080808]">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6">Галерея PLAUD</h2>
-            <p className="text-white/50">Посмотрите, как PLAUD вписывается в вашу жизнь.</p>
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-4xl md:text-6xl font-bold tracking-tighter mb-6">
+                Инструмент <span className="text-brand italic">нового поколения</span> для бизнеса.
+              </h2>
+              <p className="text-white/50 text-lg">
+                PLAUD — это не просто диктофон. Это ваш персональный ассистент, который позволяет сосредоточиться на главном: на людях и идеях.
+              </p>
+            </div>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[800px]">
+            {/* Large Main Image */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="md:col-span-8 md:row-span-2 rounded-[40px] overflow-hidden glass relative group"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="aspect-[4/5] rounded-[40px] overflow-hidden glass"
             >
               <img 
-                src="https://picsum.photos/seed/plaud-life-1/800/1000" 
-                alt="Plaud in hand" 
-                className="w-full h-full object-cover"
+                src="https://uk.plaud.ai/cdn/shop/files/plaud-note-silver-front.webp?v=1759799193" 
+                alt="Plaud Note Silver" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end">
+                <div className="bg-brand/10 border border-brand/20 w-fit px-3 py-1 rounded-full text-[10px] font-bold text-brand uppercase tracking-widest mb-4">
+                  Премиум материалы
+                </div>
+                <h3 className="text-3xl font-bold mb-3">Безупречный дизайн</h3>
+                <p className="text-white/60 max-w-md leading-relaxed">
+                  Тонкий корпус из авиационного алюминия толщиной всего 2.97 мм. Идеально помещается в кошелек или крепится к смартфону через MagSafe.
+                </p>
+              </div>
             </motion.div>
+
+            {/* Top Right */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="md:col-span-4 rounded-[40px] overflow-hidden glass relative group"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="aspect-[4/5] rounded-[40px] overflow-hidden glass"
             >
               <img 
-                src="https://picsum.photos/seed/plaud-life-2/800/1000" 
-                alt="Plaud MagSafe" 
-                className="w-full h-full object-cover"
+                src="https://uk.plaud.ai/cdn/shop/files/PlaudNotePro-front-black.webp?v=1759235691" 
+                alt="Plaud Note Pro Interface" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-2">Интеллектуальный контроль</h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  Мгновенная информация о заряде и режиме работы. Всегда готов к записи важных мыслей.
+                </p>
+              </div>
             </motion.div>
+
+            {/* Bottom Right */}
             <motion.div 
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              className="md:col-span-4 rounded-[40px] overflow-hidden glass relative group"
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="aspect-[4/5] rounded-[40px] overflow-hidden glass"
             >
               <img 
-                src="https://picsum.photos/seed/plaud-life-3/800/1000" 
-                alt="Plaud Note Pin" 
-                className="w-full h-full object-cover"
+                src="https://uk.plaud.ai/cdn/shop/files/plaud-note-black.webp?v=1759799193" 
+                alt="Plaud Note Black" 
+                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
+                <h3 className="text-xl font-bold mb-2">Эстетика продуктивности</h3>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  Инструмент, который подчеркивает ваш профессионализм на каждой встрече.
+                </p>
+              </div>
             </motion.div>
           </div>
         </div>
@@ -659,7 +691,7 @@ export default function App() {
               <ul className="space-y-4 text-sm text-white/40">
                 <li><a href="#" className="hover:text-brand transition-colors">Функции</a></li>
                 <li><a href="#" className="hover:text-brand transition-colors">ИИ-подписка</a></li>
-                <li><a href="#" className="hover:text-brand transition-colors">Скачать приложение</a></li>
+                <li><a href="https://apps.apple.com/ru/app/plaud-ai-note-taker/id6450364080?ysclid=mm4wxvtjfg472969820" className="hover:text-brand transition-colors">Скачать приложение</a></li>
                 <li><a href="#" className="hover:text-brand transition-colors">Аксессуары</a></li>
               </ul>
             </div>
