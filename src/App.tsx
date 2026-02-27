@@ -44,11 +44,13 @@ const Navbar = () => {
       isScrolled ? "bg-black/80 backdrop-blur-md border-b border-white/5" : "bg-transparent"
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center">
+        <div className="flex items-center gap-2 group cursor-pointer">
+          <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
             <Mic className="text-black w-5 h-5" />
           </div>
-          <span className="text-xl font-bold tracking-tighter">PLAUD-Market</span>
+          <span className="text-xl font-black tracking-[0.1em] uppercase">
+            PLAUD<span className="text-brand">-RUSSIA</span>
+          </span>
         </div>
 
         {/* Desktop Nav */}
@@ -281,7 +283,7 @@ export default function App() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-brand text-xs font-bold tracking-widest uppercase mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 text-brand text-[10px] font-black tracking-[0.2em] uppercase mb-8 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
           >
             <Zap className="w-3 h-3 fill-brand" />
             Работает на базе ChatGPT-4o
@@ -301,7 +303,7 @@ export default function App() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-12 leading-relaxed"
+            className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
             PLAUD NOTE — это первый в мире ИИ-диктофон на базе ChatGPT. 
             Запись одним нажатием, мгновенная расшифровка и умные резюме.
@@ -315,7 +317,7 @@ export default function App() {
           >
             <button 
               onClick={() => handlePurchase('Plaud AI', '21 000')}
-              className="bg-brand text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2"
+              className="bg-brand text-black px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform flex items-center gap-2 shadow-[0_10px_30px_rgba(16,185,129,0.3)]"
             >
               Заказать сейчас <ArrowRight className="w-5 h-5" />
             </button>
@@ -333,6 +335,14 @@ export default function App() {
           className="mt-20 max-w-5xl mx-auto relative"
         >
           <div className="aspect-[16/9] rounded-3xl overflow-hidden glass relative group">
+            <div className="absolute top-8 left-8 z-20">
+              <div className="flex items-center gap-2 bg-black/40 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+                <div className="w-6 h-6 bg-brand rounded flex items-center justify-center">
+                  <Mic className="text-black w-4 h-4" />
+                </div>
+                <span className="text-sm font-black tracking-widest uppercase">PLAUD<span className="text-brand">-RUSSIA</span></span>
+              </div>
+            </div>
             <img 
               src="https://avatars.mds.yandex.net/i?id=bae67f534ac46fbdefce98c6284e6e53_l-9459492-images-thumbs&n=13" 
               alt="Устройство Plaud Note" 
@@ -632,11 +642,13 @@ export default function App() {
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-12 mb-20">
             <div className="col-span-2">
-              <div className="flex items-center gap-2 mb-6">
-                <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center">
+              <div className="flex items-center gap-2 mb-6 group cursor-pointer">
+                <div className="w-8 h-8 bg-brand rounded-lg flex items-center justify-center group-hover:rotate-12 transition-transform duration-300">
                   <Mic className="text-black w-5 h-5" />
                 </div>
-                <span className="text-xl font-bold tracking-tighter">PLAUD-Market</span>
+                <span className="text-xl font-black tracking-[0.1em] uppercase">
+                  PLAUD<span className="text-brand">-RUSSIA</span>
+                </span>
               </div>
               <p className="text-white/40 max-w-sm leading-relaxed">
                 Помогаем людям и командам фиксировать, организовывать и использовать результаты их самых важных разговоров.
