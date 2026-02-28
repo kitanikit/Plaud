@@ -49,7 +49,7 @@ const Navbar = () => {
             <Mic className="text-black w-5 h-5" />
           </div>
           <span className="text-xl font-black tracking-[0.1em] uppercase">
-            PLAUD<span className="text-brand">-RUSSIA</span>
+            PLAUD<span className="text-brand">-MARKET</span>
           </span>
         </div>
 
@@ -340,12 +340,12 @@ export default function App() {
                 <div className="w-6 h-6 bg-brand rounded flex items-center justify-center">
                   <Mic className="text-black w-4 h-4" />
                 </div>
-                <span className="text-sm font-black tracking-widest uppercase">PLAUD<span className="text-brand">-RUSSIA</span></span>
+                <span className="text-sm font-black tracking-widest uppercase">PLAUD<span className="text-brand">-MARKET</span></span>
               </div>
             </div>
             <img 
-              src="https://uk.plaud.ai/cdn/shop/files/plaud-note-black-silver-hero.webp" 
-              alt="Устройства Plaud Note" 
+              src="https://techcrunch.com/wp-content/uploads/2025/08/Plaud-Note-Pro.jpg" 
+              alt="Устройства Plaud Note Pro" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
             />
@@ -679,7 +679,7 @@ export default function App() {
                   <Mic className="text-black w-5 h-5" />
                 </div>
                 <span className="text-xl font-black tracking-[0.1em] uppercase">
-                  PLAUD<span className="text-brand">-RUSSIA</span>
+                  PLAUD<span className="text-brand">-MARKET</span>
                 </span>
               </div>
               <p className="text-white/40 max-w-sm leading-relaxed">
