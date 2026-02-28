@@ -262,7 +262,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen font-sans overflow-x-hidden w-full">
       <Navbar />
       
       <AnimatePresence>

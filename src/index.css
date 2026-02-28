@@ -6,6 +6,11 @@
 }
 
 @layer base {
+  html, body {
+    @apply overflow-x-hidden;
+    width: 100%;
+    position: relative;
+  }
   body {
     @apply bg-[#050505] text-white antialiased selection:bg-brand selection:text-black;
   }
