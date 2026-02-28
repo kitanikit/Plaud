@@ -348,6 +348,7 @@ export default function App() {
               alt="Устройства Plaud Note Pro" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
+              draggable="false"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
             
@@ -529,6 +530,7 @@ export default function App() {
                 alt="Plaud Note Silver" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
+                draggable="false"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-10 flex flex-col justify-end">
                 <div className="bg-brand/10 border border-brand/20 w-fit px-3 py-1 rounded-full text-[10px] font-bold text-brand uppercase tracking-widest mb-4">
@@ -554,6 +556,7 @@ export default function App() {
                 alt="Plaud Note Pro Interface" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
+                draggable="false"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
                 <h3 className="text-xl font-bold mb-2">Интеллектуальный контроль</h3>
@@ -576,6 +579,7 @@ export default function App() {
                 alt="Plaud Note Black" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
+                draggable="false"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent p-8 flex flex-col justify-end">
                 <h3 className="text-xl font-bold mb-2">Эстетика продуктивности</h3>
@@ -605,6 +609,7 @@ export default function App() {
                   alt="Plaud AI" 
                   className="w-full h-full object-contain p-4"
                   referrerPolicy="no-referrer"
+                  draggable="false"
                 />
               </div>
               <div className="mb-8">
@@ -641,6 +646,7 @@ export default function App() {
                   alt="Plaud AI PRO" 
                   className="w-full h-full object-contain p-4"
                   referrerPolicy="no-referrer"
+                  draggable="false"
                 />
               </div>
               <div className="mb-8">

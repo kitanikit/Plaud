@@ -9,6 +9,11 @@
   body {
     @apply bg-[#050505] text-white antialiased selection:bg-brand selection:text-black;
   }
+  img {
+    @apply select-none pointer-events-none;
+    -webkit-user-drag: none;
+    user-select: none;
+  }
 }
 
 .glass {
