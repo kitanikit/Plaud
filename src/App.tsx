@@ -19,7 +19,8 @@ import {
   Layers,
   Clock,
   Battery,
-  ArrowRight
+  ArrowRight,
+  Phone
 } from 'lucide-react';
 import { clsx, type ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -58,6 +59,15 @@ const Navbar = () => {
           <a href="#features" className="hover:text-white transition-colors">Функции</a>
           <a href="#how-it-works" className="hover:text-white transition-colors">Как это работает</a>
           <a href="#pricing" className="hover:text-white transition-colors">Цены</a>
+          
+          <a 
+            href="tel:+79252509995" 
+            className="flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand/50 transition-all group"
+          >
+            <Phone className="w-4 h-4 text-brand group-hover:scale-110 transition-transform" />
+            <span className="text-white font-bold tracking-tight">+7 (925) 250-99-95</span>
+          </a>
+
           <button className="bg-white text-black px-5 py-2 rounded-full hover:bg-brand hover:text-black transition-all font-semibold">
             Купить сейчас
           </button>
@@ -84,6 +94,21 @@ const Navbar = () => {
             <a href="#features" onClick={() => setIsMobileMenuOpen(false)}>Функции</a>
             <a href="#how-it-works" onClick={() => setIsMobileMenuOpen(false)}>Как это работает</a>
             <a href="#pricing" onClick={() => setIsMobileMenuOpen(false)}>Цены</a>
+            
+            <a 
+              href="tel:+79252509995" 
+              className="flex items-center gap-3 p-4 rounded-2xl bg-white/5 border border-white/10"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              <div className="w-10 h-10 bg-brand/20 rounded-xl flex items-center justify-center">
+                <Phone className="w-5 h-5 text-brand" />
+              </div>
+              <div>
+                <div className="text-[10px] text-white/40 uppercase font-bold tracking-widest">Связаться с нами</div>
+                <div className="text-white font-bold">+7 (925) 250-99-95</div>
+              </div>
+            </a>
+
             <button className="bg-brand text-black w-full py-3 rounded-xl font-bold">Купить сейчас</button>
           </motion.div>
         )}
