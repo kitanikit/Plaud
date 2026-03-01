@@ -240,7 +240,7 @@ export function HomePage() {
               </div>
             </div>
             <img 
-              src="https://techcrunch.com/wp-content/uploads/2025/08/Plaud-Note-Pro.jpg" 
+              src="https://i.postimg.cc/6pj6ZNHs/Chat-GPT-Image-Mar-2-2026-at-01-06-53-AM.png" 
               alt="Устройства Plaud Note Pro" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
@@ -422,7 +422,7 @@ export function HomePage() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://uk.plaud.ai/cdn/shop/files/plaud-note-silver-front.webp?v=1759799193" 
+                src="https://i.postimg.cc/NM4H2jzF/efce178cae8c29d2823b8f20446fecd2d599a1d5c256741eacb49bcd102633d0.jpg" 
                 alt="Plaud Note Silver" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
