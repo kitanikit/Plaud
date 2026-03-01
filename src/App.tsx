@@ -28,7 +28,6 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { products } from './data/products';
 import { CheckoutModal } from './components/CheckoutModal';
 import { ProductPage } from './pages/ProductPage';
-import { LazyVideo } from './components/LazyVideo';
 
 function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -180,25 +179,21 @@ export function HomePage() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 text-brand text-[10px] font-black tracking-[0.2em] uppercase mb-12 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 text-brand text-[10px] font-black tracking-[0.2em] uppercase mb-8 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
           >
             <Zap className="w-3 h-3 fill-brand" />
             Работает на базе ChatGPT-4o
           </motion.div>
           
-          {/* Video Block */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.9, y: 40 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
-            transition={{ delay: 0.1, duration: 0.8 }}
-            className="max-w-5xl mx-auto mb-12"
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-gradient"
           >
-            <LazyVideo 
-              videoUrl="https://www.youtube.com/embed/78y_q-vL-jM"
-              posterUrl="https://uk.plaud.ai/cdn/shop/files/plaud-note-black.webp?v=1759799193"
-              title="Plaud Note Demonstration"
-            />
-          </motion.div>
+            Заметки, <br className="hidden md:block" />
+            переосмысленные ИИ.
+          </motion.h1>
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -222,14 +217,60 @@ export function HomePage() {
             >
               Заказать сейчас <ArrowRight className="w-5 h-5" />
             </button>
-            <button 
-              onClick={() => document.getElementById('product-video')?.scrollIntoView({ behavior: 'smooth', block: 'center' })}
-              className="px-8 py-4 rounded-full font-bold text-lg border border-white/10 hover:bg-white/5 transition-colors flex items-center gap-2"
-            >
+            <button className="px-8 py-4 rounded-full font-bold text-lg border border-white/10 hover:bg-white/5 transition-colors flex items-center gap-2">
               <Play className="w-5 h-5 fill-white" /> Смотреть видео
             </button>
           </motion.div>
         </div>
+
+        {/* Product Image Placeholder */}
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9, y: 40 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.8 }}
+          className="mt-20 max-w-5xl mx-auto relative"
+        >
+          <div className="aspect-[16/9] rounded-3xl overflow-hidden glass relative group">
+            <div className="absolute top-8 left-8 z-20">
+              <div className="flex items-center gap-2 bg-black/40 backdrop-blur-md px-4 py-2 rounded-xl border border-white/10">
+                <div className="w-6 h-6 bg-brand rounded flex items-center justify-center">
+                  <Mic className="text-black w-4 h-4" />
+                </div>
+                <span className="text-sm font-black tracking-widest uppercase">PLAUD<span className="text-brand">-MARKET</span></span>
+              </div>
+            </div>
+            <img 
+              src="https://techcrunch.com/wp-content/uploads/2025/08/Plaud-Note-Pro.jpg" 
+              alt="Устройства Plaud Note Pro" 
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+              referrerPolicy="no-referrer"
+              draggable="false"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+            
+            {/* Floating UI Elements */}
+            <div className="absolute bottom-8 left-8 right-8 flex justify-between items-end">
+              <div className="glass p-4 rounded-2xl max-w-xs">
+                <div className="flex items-center gap-2 mb-2">
+                  <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-white/50">Живая расшифровка</span>
+                </div>
+                <p className="text-sm text-white/80 italic">"Сроки проекта были перенесены на третий квартал, чтобы обеспечить полную оптимизацию всех моделей ИИ..."</p>
+              </div>
+              <div className="hidden md:block glass p-4 rounded-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 bg-brand/20 rounded-xl flex items-center justify-center">
+                    <Layers className="text-brand w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-xs font-bold">Интеллект-карта создана</div>
+                    <div className="text-[10px] text-white/40">Визуализация структуры вашей встречи</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </section>
 
       {/* Stats Section */}
