@@ -182,7 +182,7 @@ export function HomePage() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 text-brand text-[10px] font-black tracking-[0.2em] uppercase mb-8 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
           >
             <Zap className="w-3 h-3 fill-brand" />
-            Работает на базе ChatGPT-4o
+            Работает на базе ChatGPT-5.2
           </motion.div>
           
           <motion.h1 
@@ -192,7 +192,7 @@ export function HomePage() {
             className="text-5xl md:text-8xl font-bold tracking-tighter mb-8 text-gradient"
           >
             Заметки, <br className="hidden md:block" />
-            переосмысленные ИИ.
+            переосмысленные ИИ
           </motion.h1>
 
           <motion.p 
@@ -202,7 +202,7 @@ export function HomePage() {
             className="text-lg md:text-xl text-white/50 max-w-2xl mx-auto mb-12 leading-relaxed"
           >
             PLAUD NOTE — это первый в мире ИИ-диктофон на базе ChatGPT. 
-            Запись одним нажатием, мгновенная расшифровка и умные резюме.
+            Запись одним нажатием, мгновенная расшифровка и умные резюме
           </motion.p>
 
           <motion.div 
@@ -240,7 +240,7 @@ export function HomePage() {
               </div>
             </div>
             <img 
-              src="https://i.postimg.cc/6pj6ZNHs/Chat-GPT-Image-Mar-2-2026-at-01-06-53-AM.png" 
+              src="https://i.postimg.cc/sgkrb4Hp/Airbrush-IMAGE-ENHANCER-1772440170520-1772440170520.png" 
               alt="Устройства Plaud Note Pro" 
               className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
               referrerPolicy="no-referrer"
@@ -422,7 +422,7 @@ export function HomePage() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://i.postimg.cc/NM4H2jzF/efce178cae8c29d2823b8f20446fecd2d599a1d5c256741eacb49bcd102633d0.jpg" 
+                src="https://i.postimg.cc/rw3b78gL/Airbrush-IMAGE-ENHANCER-1772407971135-1772407971136.jpg" 
                 alt="Plaud Note Silver" 
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 referrerPolicy="no-referrer"
